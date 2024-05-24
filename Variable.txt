@@ -1,0 +1,5 @@
+sg_L -1i*D/pi/(ewfd1.omega-1i/tau) "Linear conductivity at FF"
+sg_LT -1i*D/pi/(ewfd2.omega-1i/tau) "Linear conductivity at TH"
+sg_NL 1i*s0*((hbar_const*vF*e_const)^2)*T(hbar_const*ewfd1.omega/2/EF)/48/pi/((hbar_const*ewfd1.omega)^4) "Nonlinear conductivity"
+P_TH intop1(ewfd2.nPoav) "TH power outflow"
+CE P_TH/P0 "Conversion efficiency"
